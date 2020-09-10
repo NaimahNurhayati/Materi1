@@ -1,13 +1,13 @@
 <?php
 
     class Mobil {
-        public $merk, $tipe, $mesin, $max_speed;
+        private $merk, $tipe, $mesin, $max_speed;
 
-        function cetakTipe(){
+        public function cetakTipe(){
             return $this->tipe;
         }
 
-        function kecepatanMaksimal(){
+        private function kecepatanMaksimal(){
             return " kecepatan maksimal sebesar :".$this->max_speed;
         }
     }
