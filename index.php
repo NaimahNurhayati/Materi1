@@ -35,4 +35,4 @@
     $tesla->mesin = "Listrik";
     $tesla->max_speed = "280km/h";
 
-    $tesla->selfParking();
+    echo $tesla->kecepatanMaksimal();
