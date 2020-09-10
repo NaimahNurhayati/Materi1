@@ -7,7 +7,7 @@
             return $this->tipe;
         }
 
-        private function kecepatanMaksimal(){
+        public function kecepatanMaksimal(){
             return " kecepatan maksimal sebesar :".$this->max_speed;
         }
     }
@@ -17,7 +17,7 @@
     }
 
     class Tesla extends Mobil {
-        function selfParking(){
+        private function selfParking(){
             echo "Parkir Sendiri";
         }
     }
@@ -35,4 +35,4 @@
     $tesla->mesin = "Listrik";
     $tesla->max_speed = "280km/h";
 
-    echo $tesla->kecepatanMaksimal();
+    echo $tesla->selfParking();
