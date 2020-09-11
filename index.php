@@ -10,6 +10,11 @@
         public function kecepatanMaksimal(){
             return " kecepatan maksimal sebesar :".$this->max_speed;
         }
+
+        function injekGas(){
+            return "mengalirkan bensin keruang bakar, rpm naik, roda berputer";
+        }
+
     }
 
     class BMW extends Mobil {
@@ -17,8 +22,13 @@
     }
 
     class Tesla extends Mobil {
-        private function selfParking(){
+        function selfParking(){
             echo "Parkir Sendiri";
+        }
+
+        function injekGas(){
+            return parent::injekGas();
+            return "mengalirkan listrik ke dinamo, rpm naik, roda berputer";
         }
     }
 
@@ -35,4 +45,7 @@
     $tesla->mesin = "Listrik";
     $tesla->max_speed = "280km/h";
 
-    echo $tesla->selfParking();
+    echo "BMW :".$bmw->injekGas();
+    echo "<br>";
+    echo "<br>";
+    echo "Tesla :".$tesla->injekGas();
