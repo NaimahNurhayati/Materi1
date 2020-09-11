@@ -27,7 +27,6 @@
         }
 
         function injekGas(){
-            return parent::injekGas();
             return "mengalirkan listrik ke dinamo, rpm naik, roda berputer";
         }
     }
