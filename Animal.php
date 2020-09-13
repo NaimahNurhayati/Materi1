@@ -72,7 +72,7 @@ echo "Punya kaki sebanyak : " . $momo->jumlah_kaki . "<br>";
 echo $momo->bisa_terbang . "<br>";
 echo "Suaranya : " . $momo->bersuara() . "<br>";
 
-echo "<hr><hr>";
+echo "<hr>";
 
 
 $doggo = new Anjing;
@@ -82,7 +82,7 @@ echo "Punya kaki sebanyak : " . $doggo->jumlah_kaki . "<br>";
 echo $doggo->bisa_terbang . "<br>";
 echo "Suaranya : " . $doggo->bersuara() . "<br>";
 
-echo "<hr><hr>";
+echo "<hr>";
 
 
 $zya = new Elang;
@@ -92,7 +92,7 @@ echo "Punya kaki sebanyak : " . $zya->jumlah_kaki . "<br>";
 echo $zya->bisa_terbang . "<br>";
 echo "Suaranya : " . $zya->bersuara() . "<br>";
 
-echo "<hr><hr>";
+echo "<hr>";
 
 
 $masha = new Angsa;
@@ -102,4 +102,4 @@ echo "Punya kaki sebanyak : " . $masha->jumlah_kaki . "<br>";
 echo $masha->bisa_terbang . "<br>";
 echo "Suaranya : " . $masha->bersuara() . "<br>";
 
-echo "<hr><hr>";
+echo "<hr>";
